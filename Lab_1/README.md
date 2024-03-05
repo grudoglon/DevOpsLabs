@@ -44,7 +44,7 @@
 
 **Результат сборки:**
 <p align="center">
-    <img src="./Lab_1/images/img-3.png">
+    <img src="./images/img-3.png">
 </p>
 
 **Хороший Dockerfile:**

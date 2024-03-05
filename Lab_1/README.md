@@ -89,6 +89,12 @@ CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
 
 **Хороший Dockerfile:**
 ```
+FROM python:3.8-alpine AS builder
+EXPOSE 8000
+COPY ./requirements.txt .
+RUN pip install -r ./requirements.txt
+COPY . .
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "app:app"]
 ```
 В хорошем Dockerfile использованы понятные имена, использована конкретная версия python и все необходимые пакеты устанавливаются из файла requirements.txt.
 

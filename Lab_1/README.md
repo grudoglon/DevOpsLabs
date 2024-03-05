@@ -34,12 +34,12 @@
    ```
 	Каждый RUN создает отдельный слой в образе. Чем больше слоев, тем больше весит итоговый образ и тем больше времени требуется на его сборку. Что видно из рисунка ниже:
 <p align="center">
-    <img src="./Lab_1/images/img-1.png">
+    <img src="./images/img-1.png">
 </p>
 
 **Сборка плохого Dockerfile:**
 <p align="center">
-    <img src="./Lab_1/images/img-2.png">
+    <img src="./images/img-2.png">
 </p>
 
 **Результат сборки:**
@@ -54,12 +54,12 @@
 
 **Сборка хорошего Dockerfile:**
 <p align="center">
-    <img src="./Lab_1/images/img-4.png">
+    <img src="./images/img-4.png">
 </p>
 
 **Результат сборки:**
 <p align="center">
-    <img src="./Lab_1/images/img-5.png">
+    <img src="./images/img-5.png">
 </p>
 
 **Плохие практики для работы с контейнером:**

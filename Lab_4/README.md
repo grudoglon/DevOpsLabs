@@ -24,6 +24,11 @@ helm install grafana grafana/grafana
     <img src="./images/img-2.png">
 </p>
 
+Запуск сервисов Prometheus и Grafana:
+```
+kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-np
+kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-np
+```
 
 
 ## Вывод

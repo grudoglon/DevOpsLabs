@@ -82,6 +82,18 @@ spec:
 ```
 **service.yalm:**
 ```
+apiVersion: v1
+kind: Service
+metadata:
+  name: kuber-app
+spec: 
+  selector:
+    app: kuber-app
+  ports:
+    - port: 8000
+      protocol: TCP
+      targetPort: 8000
+  type: LoadBalancer
 ```
 Для создания объектов в kubernetes нужно воспользоваться следующими командами:
 ```

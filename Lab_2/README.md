@@ -31,7 +31,29 @@ requirements
 <p align="center">
     <img src="./images/img-2.png">
 </p>
+<p align="center">
+    <img src="./images/img-3.png">
+</p>
 
+Для того чтобы можно было развернуть созданное приложение с помощью kubernetes необходимо прописать манифесты (Deployment и Service) в формате yalm-файлов.
 
+**deployment.yalm:**
+```
+```
+**service.yalm:**
+```
+```
+Для создания объектов в kubernetes нужно воспользоваться следующими командами:
+```
+kubectl apply -f deployment.yalm
+kubectl apply -f service.yalm
+```
+Сервис был запущен с помощью команды `minikube service kuber-app`
+**Результат:**
+<p align="center">
+    <img src="./images/img-4.png">
+</p>
 
 ## Вывод
+
+В результате выполнения лабораторной работы был поднят кластер Kubernetes локально, в нём был развернут свой сервис.

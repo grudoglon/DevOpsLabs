@@ -21,7 +21,7 @@ helm repo add grafana https://grafana.github.io/helm-charts
 helm install grafana grafana/grafana
 ```
 <p align="center">
-    <img src="./images/img-1.png">
+    <img src="./images/img-2.png">
 </p>
 
 

@@ -11,4 +11,11 @@
     <img src="./images/img-1.png">
 </p>
 
+Создадим виртуальное хранилище образов для докера на порту 5000
+```
+minikube addons enable registry
+docker run --rm -it --network=host alpine ash -c "apk add socat && socat TCP-LISTEN:5000,reuseaddr,fork TCP:$(minikube ip):5000"
+```
+
+
 ## Вывод

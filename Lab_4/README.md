@@ -29,6 +29,10 @@ helm install grafana grafana/grafana
 kubectl expose service prometheus-server --type=NodePort --target-port=9090 --name=prometheus-server-np
 kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana-np
 ```
+После запуска сервиса Prometheus с помощью команды `minikube service prometheus-server-np` открылась страница в браузере:
+<p align="center">
+    <img src="./images/img-3.png">
+</p>
 
 
 ## Вывод

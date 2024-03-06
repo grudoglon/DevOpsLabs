@@ -48,7 +48,11 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
     <img src="./images/img-5.png">
 </p>
 
-
+После был создан новый Dashboard в качестве типа отображения был импортирован node-exporter-full (по id) на странице, которую рекомендует Grafana (https://grafana.com/grafana/dashboards/)
+<p align="center">
+    <img src="./images/img-6.png">
+</p>
 
 ## Вывод
 
+Был успешно настроен мониторинг сервиса, запущенного в Kubernetes, с использованием Prometheus и Grafana. Было настроено отображение графиков для отслеживания нагрузки

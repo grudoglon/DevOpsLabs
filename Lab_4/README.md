@@ -43,6 +43,10 @@ kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana
 ```
 kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode
 ```
+После было настроено получение Grafana метрик с Prometheus. Для этого в разделе «connection - data source». Было добавлено соединение с Prometheus.
+<p align="center">
+    <img src="./images/img-5.png">
+</p>
 
 
 

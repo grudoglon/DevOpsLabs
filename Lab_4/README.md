@@ -15,6 +15,15 @@ helm install prometheus prometheus-community/prometheus
     <img src="./images/img-1.png">
 </p>
 
+**Установка Grafana:**
+```
+helm repo add grafana https://grafana.github.io/helm-charts
+helm install grafana grafana/grafana
+```
+<p align="center">
+    <img src="./images/img-1.png">
+</p>
+
 
 
 ## Вывод

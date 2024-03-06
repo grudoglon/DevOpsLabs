@@ -39,6 +39,11 @@ kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana
     <img src="./images/img-4.png">
 </p>
 
+Для того, чтобы войти в сервис Grafana нужно ввести логин, в нашем случае: admin и пароль, который был получен с помощью команды:
+```
+kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-password}" | base64 --decode
+```
+
 
 
 ## Вывод

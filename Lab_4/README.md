@@ -34,6 +34,12 @@ kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana
     <img src="./images/img-3.png">
 </p>
 
+Запуск Grafana с помощью команды `minikube service grafana-np`:
+<p align="center">
+    <img src="./images/img-4.png">
+</p>
+
+
 
 ## Вывод
 

@@ -60,6 +60,25 @@ Werkzeug==2.0.2
 
 **deployment.yalm:**
 ```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kuber-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kuber-app
+  template:
+    metadata:
+      labels:
+        app: kuber-app
+    spec:
+      containers:
+      - name: kuber-app
+        image: localhost:5000/app-for-kuber
+        ports:
+          - containerPort: 8000
 ```
 **service.yalm:**
 ```
